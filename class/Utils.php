@@ -9,7 +9,7 @@ class Utils
 	/**
 	 * The useragent to use for cURL requests to the online indicator
 	 */
-	const USER_AGENT = "osu!next Signature Generator - lemmmy.pw/osusig/ - v3";
+	const USER_AGENT = "osu!next Signature Generator - sig.ripple.moe - v3";
 
 	/**
 	 * The URL for the online indicator API thingy

@@ -1,7 +1,5 @@
 # osu!next Signature Generator v3
-This is a signature generator written in PHP for osu!next style signatures. The design is based on flyte's design. Live version with the generator can be found [here](http://lemmmy.pw/osusig).
-
-_Relatively_ up-to-date documentation can be found [at my site here](http://lemmmy.pw/osusig/docs).
+This is a signature generator written in PHP for osu!next style signatures. The design is based on flyte's design. Live version with the generator can be found [here](http://sig.ripple.moe).
 
 ## Usage
 The generator itself is in `sig.php`. All templates accepts the following parameters:
@@ -37,43 +35,16 @@ TemplateNormal accepts the following:
 * `avatarrounding` - Sets a custom rounding for the avatar - must be a numeric value
 * `rankedscore` - Whether to show the ranked score in place of the Play Count or not
 
-
-## Examples
-
-| `colour` | `uname`  | `mode`      | Image |
-| -------- | -------- | ----------- |:-----:|
-| `green`  | `Lemmmy` | unspecified | ![](http://lemmmy.pw/osusig/sig.php?colour=green&uname=Lemmmy) |
-| `pink`   | `peppy`  | `1` | ![](http://lemmmy.pw/osusig/sig.php?colour=pink&uname=peppy&mode=1) |
-| `hexFFAA00`| `hvick225`  | `0` | ![](http://lemmmy.pw/osusig/sig.php?colour=hexFFAA00&uname=hvick225&mode=0) |
-
-_Note:_ `hex` is a workaround for osu!'s gocamo server
-
-### Live examples
-
-`http://lemmmy.pw/osusig/sig.php?colour=purple&uname=Lemmmy`
-![](http://lemmmy.pw/osusig/sig.php?colour=purple&uname=Lemmmy)
-
-
-`http://lemmmy.pw/osusig/sig.php?colour=blue&uname=rrtyui&pp=2`
-![](http://lemmmy.pw/osusig/sig.php?colour=blue&uname=rrtyui&pp=2)
-
-
-`http://lemmmy.pw/osusig/sig.php?colour=yellow&uname=jhlee0133&mode=3&pp=1`
-![](http://lemmmy.pw/osusig/sig.php?colour=yellow&uname=jhlee0133&mode=3&pp=1)
-
 ## Requirements
-The generator requires ImageMagick and memcached.
-You will need a file in `p/` called `.priv.php` with contents like such:
 
-    <?php
-    define("AKEY", "your-osu!-api-key");
-
-It is recommended to place a blocking `.htaccess` in this directory.
+The generator requires ImageMagick and memcached. That's it. Yes.
 
 ## Credits
+
 Favicon is owned by Dean 'peppy' Herbert. The mode icons and flags are designed by Flyte and can be found at his pixelapse [here](https://www.pixelapse.com/flyte/projects/osu!designs/files/). `triangles.png` and `triangles2.png` are self-made.
 
 ## License
+
 Everything except the following files are licensed under GPL-v3:
 
 ```
