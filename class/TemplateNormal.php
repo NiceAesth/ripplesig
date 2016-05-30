@@ -34,7 +34,6 @@ class TemplateNormal extends Template
 		$userRank = $user['pp_rank'];
 		$userRank = $userRank ? $userRank : '?';
 		$userCountryRank = $user['pp_country_rank'];
-		$userCountryRank = $userCountryRank ? $userCountryRank : '?';
 		$mode = isset($_GET['mode']) ? $_GET['mode'] : 'osu';
 		$iconmode = 0;
 		switch ($mode) {
@@ -75,7 +74,7 @@ class TemplateNormal extends Template
 			$signature,
 			$isCountryRank ? 325 : 287,
 			32,
-			'#' . number_format($userRank) . ($isCountryRank ? " (" . '#' . (is_numeric($userCountryRank) ? number_format($userCountryRank) : $userCountryRank) . ')' : ""),
+			'#' . number_format($userRank) . ($isCountryRank ? " (" . '#' . (is_integer($userCountryRank) ? number_format($userCountryRank) : $userCountryRank) . ')' : ""),
 			ComponentLabel::FONT_REGULAR,
 			$headerTextColour,
 			$isCountryRank ? 12 : 14,
@@ -202,7 +201,7 @@ class TemplateNormal extends Template
 			$this->addComponent($ppLabel);
 		}
 
-		$onlineIndicator = isset($_GET['onlineindicator']) ? $_GET['onlineindicator'] : false;
+		$onlineIndicator = false;
 		$online = $onlineIndicator == 2 || $onlineIndicator == 3 ? Utils::isUserOnline($user['username']) : false;
 
 		if ($online) {
