@@ -12,7 +12,7 @@
  */
 class ComponentAvatar extends Component
 {
-	const AVATAR_URL = 'http://a.ripple.moe/';
+	const AVATAR_URL = 'https://a.ripple.moe/';
 
 	/**
 	 * The width of this avatar
@@ -84,7 +84,7 @@ class ComponentAvatar extends Component
 	 * @return Imagick|null The avatar, or nothing.
 	 */
 	private function getAvatar($user) {
-		$avatarURL = self::AVATAR_URL . urlencode($user['user_id']) . '_' . urlencode(time()) . '.png';
+		$avatarURL = self::AVATAR_URL . urlencode($user['user_id']);
 
 		$avatar = new Imagick();
 		$cachedPicture = $this->mc->get("osusigv3_avatar_" . $user['user_id']);
