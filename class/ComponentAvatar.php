@@ -12,7 +12,7 @@
  */
 class ComponentAvatar extends Component
 {
-	const AVATAR_URL = 'https://a.ripple.moe/';
+	const AVATAR_URL = 'http://a.ripple.moe/';
 
 	/**
 	 * The width of this avatar
