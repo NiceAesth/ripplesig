@@ -127,6 +127,5 @@
 	            </span>
             </div>
         </article>
-        <?php include_once('/var/www/req/.analytics.php'); ?>
     </body>
 </html>
