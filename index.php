@@ -5,8 +5,6 @@
         <link href='https://fonts.googleapis.com/css?family=Exo+2:400,300' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/app.css">
 
-        <link rel="icon" href="favicon.ico">
-
         <meta charset='UTF-8'>
         <meta name='keywords' content='osu, next, signature, generator, forum, sig'>
         <meta name='description' content='A signature generator in the style of osu!next!'>

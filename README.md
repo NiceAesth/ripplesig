@@ -41,7 +41,7 @@ The generator requires ImageMagick and memcached. That's it. Yes.
 
 ## Credits
 
-Favicon is owned by Dean 'peppy' Herbert. The mode icons and flags are designed by Flyte and can be found at his pixelapse [here](https://www.pixelapse.com/flyte/projects/osu!designs/files/). `triangles.png` and `triangles2.png` are self-made.
+Original project was made by Lemmmy. The mode icons and flags are designed by Flyte and can be found at his pixelapse [here](https://www.pixelapse.com/flyte/projects/osu!designs/files/). `triangles.png` and `triangles2.png` are made by Lemmmy, again.
 
 ## License
 
