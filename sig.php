@@ -1,8 +1,4 @@
 <?php
-// Thanks to Cygnix
-// Created by Lemmmy
-
-require_once("p/.priv.php");
 
 function __autoload($class_name) {
 	$directory = 'class/';
@@ -13,7 +9,7 @@ function __autoload($class_name) {
 	}
 }
 
-$api = new OsuAPI(constant("AKEY"));
+$api = new OsuAPI();
 
 $user = $api->getUserForMode($_GET['uname'], isset($_GET['mode']) ? $_GET['mode'] : 0);
 

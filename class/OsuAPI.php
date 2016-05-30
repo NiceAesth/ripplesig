@@ -1,6 +1,7 @@
 <?php
 /**
  * A class to access the osu! API. It queries the API at {@link API_URL}.
+ * Modified to be working with the Ripple API.
  *
  * @author Lemmmy
  */
@@ -9,14 +10,7 @@ class OsuAPI
 	/*
 	 * The osu! API url
 	 */
-	const API_URL = "https://osu.ppy.sh/api/";
-
-	/**
-	 * Your private osu!API key
-	 *
-	 * @var string
-	 */
-	private $apiKey;
+	const API_URL = "https://ripple.moe/api/";
 
 	/**
 	 * The memcache object
@@ -27,13 +21,9 @@ class OsuAPI
 
 	/**
 	 * Creates a new instance of OsuAPI
-	 *
-	 * @param string $apiKey Your private osu!API key
 	 */
-	public function __construct($apiKey)
+	public function __construct()
 	{
-		$this->apiKey = $apiKey;
-
 		$this->mc = Utils::getMemcache();
 	}
 
@@ -83,7 +73,6 @@ class OsuAPI
 	 */
 	public function request($url, $params = [])
 	{
-		$params = array_merge(["k" => $this->apiKey], $params);
 		$url = static::API_URL . $url . '?' . http_build_query($params);
 
 		return $this->decode(file_get_contents($url));
