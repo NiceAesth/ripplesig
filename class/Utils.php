@@ -14,7 +14,7 @@ class Utils
 	/**
 	 * The URL for the online indicator API thingy
 	 */
-	const ONLINE_URL = "http://onlineindicator.lemmmy.pw";
+	const ONLINE_URL = "http://c.ripple.moe/api/v1/isOnline";
 
 	/**
 	 * The memcache singleton
@@ -52,13 +52,13 @@ class Utils
 		if (!isset($onlineStatus) || empty($onlineStatus)) {
 			$ch = curl_init();
 
-			curl_setopt($ch, CURLOPT_URL, self::ONLINE_URL . '?u=' . urlencode(str_replace(' ', '_', $username)));
+			curl_setopt($ch, CURLOPT_URL, self::ONLINE_URL . '?u=' . urlencode(' ', '_', $username));
 			curl_setopt($ch, CURLOPT_HEADER, 0);
 			curl_setopt($ch, CURLOPT_USERAGENT, self::USER_AGENT);
 			curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 			curl_setopt($ch, CURLOPT_TIMEOUT_MS, 1250);
 
-			$response = json_decode(curl_exec($ch));
+			$response = json_decode(curl_exec($ch))->result;
 			curl_close($ch);
 
 			self::$mc->set("osusig_v3_online_" . $username, $response->online, 60);

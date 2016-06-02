@@ -201,7 +201,7 @@ class TemplateNormal extends Template
 			$this->addComponent($ppLabel);
 		}
 
-		$onlineIndicator = false;
+		$onlineIndicator = isset($_GET['onlineindicator']) ? $_GET['onlineindicator'] : false;
 		$online = $onlineIndicator == 2 || $onlineIndicator == 3 ? Utils::isUserOnline($user['username']) : false;
 
 		if ($online) {
