@@ -58,7 +58,7 @@ class Utils
 			curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 			curl_setopt($ch, CURLOPT_TIMEOUT_MS, 1250);
 
-			$response = json_decode(curl_exec($ch))->result;
+			$response = json_decode(curl_exec($ch), true)['result'];
 			curl_close($ch);
 
 			self::$mc->set("osusig_v3_online_" . $username, $response->online, 60);
