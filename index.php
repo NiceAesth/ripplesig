@@ -22,7 +22,7 @@
     <body>
         <div class="page-header">
             <span class="title">osu!next Signature Generator</span><br>
-            <span class="shameless-self-promotion">by <a href="https://ripple.moe/u/Howl">Howl</a> - source code available <a href="https://github.com/osuripple/ripplesig">here</a></span>
+            <span class="shameless-self-promotion">mostly by <a href="https://osu.ppy.sh/u/4656511">Lemmmy</a>, hacked a bit by <a href="https://ripple.moe/u/Howl">Howl</a> - source code available <a href="https://github.com/osuripple/ripplesig">here</a></span>
         </div>
         <header>Choose a colour</header>
         <article>
