@@ -1,5 +1,7 @@
 <?php
 
+require_once("p/.priv.php");
+
 function __autoload($class_name) {
 	$directory = 'class/';
 

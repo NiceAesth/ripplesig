@@ -1,5 +1,5 @@
 koala-config.json
-p/
+p/.priv.php
 *.iml
 .idea/
 *.ipr

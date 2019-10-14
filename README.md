@@ -37,7 +37,8 @@ TemplateNormal accepts the following:
 
 ## Requirements
 
-The generator requires ImageMagick and memcached. That's it. Yes.
+The generator requires ImageMagick and memcached.  
+It also needs the file `p/.priv.php`. It's used to configure memcached's host and port. If you're not doing anything special and you're running memcached on `localhost:11211` (default), simply run `cp p/.priv.sample.php p/.priv.php` and you're good to go.
 
 ## Credits
 

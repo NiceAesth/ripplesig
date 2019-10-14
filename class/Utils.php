@@ -26,7 +26,7 @@ class Utils
 	public static function getMemcache() {
 		if (!isset(self::$mc)) {
 			self::$mc = new Memcached();
-			self::$mc->addServer("localhost", 11211);
+			self::$mc->addServer(constant("MEMCACHED_HOSTNAME"), constant("MEMCACHED_PORT"));
 		}
 
 		return self::$mc;
