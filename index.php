@@ -8,7 +8,7 @@
         <meta charset='UTF-8'>
         <meta name='keywords' content='osu, next, signature, generator, forum, sig'>
         <meta name='description' content='A signature generator in the style of osu!next!'>
-        <meta name='author' content='Lemmmy (and Howl)'>
+        <meta name='author' content='Lemmmy (and Nice Aesthetics)'>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#bb1177">
         <meta name='handheldfriendly' content='true'>
@@ -49,7 +49,7 @@
         <header>Set your data</header>
         <article style="text-align: center;">
             <label for="uname">Name</label>
-            <input type="text" placeholder="Howl" name="uname" id="uname" />
+            <input type="text" placeholder="Nice Aesthetics" name="uname" id="uname" />
             <br><br>
             <label for="mode">Mode</label>
             <ul class="modes">
@@ -72,11 +72,11 @@
         <header>Your Signature</header>
         <article style="text-align: center;">
             <div id="previewarea">
-                <img src="sig.php?colour=pink&uname=Howl" class="preview lazy" width="338" height="94">
+                <img src="sig.php?colour=pink&uname=Nice%20Aesthetics" class="preview lazy" width="338" height="94">
             </div>
             <br>
             <label for="out">BBCode:</label>
-            <input type="text" name="out" id="out" value="[img]http://sig.sirohi.xyz/sig.php?colour=pink&uname=Howl[/img]" style="width: 100%; text-align: center" readonly />
+            <input type="text" name="out" id="out" value="[img]http://sig.sirohi.xyz/sig.php?colour=pink&uname=Nice%20Aesthetics[/img]" style="width: 100%; text-align: center" readonly />
             <br><br>
             <a href="#" id="regen" class="button">Generate</a>
         </article>
