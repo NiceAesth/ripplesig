@@ -1,7 +1,7 @@
 <?php
 /**
  * A class to access the osu! API. It queries the API at {@link API_URL}.
- * Modified to be working with the Ripple API.
+ * Modified to be working with the Sirohi API.
  *
  * @author Lemmmy
  */
@@ -10,7 +10,7 @@ class OsuAPI
 	/*
 	 * The osu! API url
 	 */
-	const API_URL = "https://ripple.moe/api/";
+	const API_URL = "https://sirohi.xyz/api/";
 
 	/**
 	 * The memcache object

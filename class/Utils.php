@@ -9,12 +9,12 @@ class Utils
 	/**
 	 * The useragent to use for cURL requests to the online indicator
 	 */
-	const USER_AGENT = "osu!next Signature Generator - sig.ripple.moe - v3";
+	const USER_AGENT = "osu!next Signature Generator - sig.sirohi.xyz - v3";
 
 	/**
 	 * The URL for the online indicator API thingy
 	 */
-	const ONLINE_URL = "http://c.ripple.moe/api/v1/isOnline";
+	const ONLINE_URL = "http://c.sirohi.xyz/api/v1/isOnline";
 
 	/**
 	 * The memcache singleton

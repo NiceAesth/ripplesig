@@ -22,7 +22,7 @@
     <body>
         <div class="page-header">
             <span class="title">osu!next Signature Generator</span><br>
-            <span class="shameless-self-promotion">mostly by <a href="https://osu.ppy.sh/u/4656511">Lemmmy</a>, hacked a bit by <a href="https://ripple.moe/u/Howl">Howl</a> - source code available <a href="https://github.com/osuripple/ripplesig">here</a></span>
+            <span class="shameless-self-promotion">mostly by <a href="https://osu.ppy.sh/u/4656511">Lemmmy</a>, edited by <a href="https://sirohi.xyz/u/1000">Nice Aesthetics</a> - source code available <a href="https://github.com/NiceAesth/ripplesig">here</a></span>
         </div>
         <header>Choose a colour</header>
         <article>
@@ -76,7 +76,7 @@
             </div>
             <br>
             <label for="out">BBCode:</label>
-            <input type="text" name="out" id="out" value="[img]http://sig.ripple.moe/sig.php?colour=pink&uname=Howl[/img]" style="width: 100%; text-align: center" readonly />
+            <input type="text" name="out" id="out" value="[img]http://sig.sirohi.xyz/sig.php?colour=pink&uname=Howl[/img]" style="width: 100%; text-align: center" readonly />
             <br><br>
             <a href="#" id="regen" class="button">Generate</a>
         </article>
