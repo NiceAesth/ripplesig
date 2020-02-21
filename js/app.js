@@ -36,7 +36,7 @@ $(function() {
             url += ($("input[name=adv-xp-bar]").prop('checked') ? "&xpbar" : "");
             url += ($("input[name=adv-xp-bar-hex]").prop('checked') ? "&xpbarhex" : "");
 
-            var fullurl = "http://sig.sirohi.xyz/" + url;
+            var fullurl = "https://sig.sirohi.xyz/" + url;
 
             $("img.preview").remove();
 

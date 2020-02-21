@@ -1,5 +1,5 @@
 # osu!next Signature Generator v3
-This is a signature generator written in PHP for osu!next style signatures. The design is based on flyte's design. Live version with the generator can be found [here](http://sig.sirohi.xyz).
+This is a signature generator written in PHP for osu!next style signatures. The design is based on flyte's design. Live version with the generator can be found [here](https://sig.sirohi.xyz).
 
 ## Usage
 The generator itself is in `sig.php`. All templates accepts the following parameters:
